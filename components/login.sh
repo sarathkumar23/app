@@ -58,7 +58,7 @@ go build &>>$LOG
 
 
 Head "pass the EndPoints in Service File"
-sed -i -e "s/user_endpoint/user.${DOMAIN}/" systemd.service
+sed -i -e "s/user_endpoint/users.${DOMAIN}/" systemd.service
 Stat $?
 
 Head "Setup the systemd Service"
